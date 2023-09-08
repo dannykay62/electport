@@ -1,0 +1,19 @@
+ /* Custom CSS for the cover image */
+/* Custom CSS for the cover image */
+.cover-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}

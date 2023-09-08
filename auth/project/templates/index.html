@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-body">
+  <div class="container cover-image has-text-centered">
+      <img src="{{ url_for('static', filename='img/cover.jpg') }}" alt="Project Cover Image">
+      <h1 class="title">Your Project Name</h1>
+      <p class="subtitle">A one-line phrase and/or description of your project.</p>
+      <a href="link_to_deployed_project" class="button">Visit Project</a>
+  </div>
+</div>
+
+<!-- Features Section -->
+<section class="section">
+  <div class="container">
+      <h2 class="title">Key Features</h2>
+      <div class="columns">
+          <!-- Feature 1 -->
+          <div class="column">
+              <img src="{{ url_for('static', filename='img/feature1_image.jpg') }}" alt="Feature 1 Image">
+              <h3 class="subtitle">Feature 1 Name</h3>
+              <p>Description of Feature 1.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="column">
+              <img src="{{ url_for('static', filename='img/feature1_image.jpg') }}" alt="Feature 2 Image">
+              <h3 class="subtitle">Feature 2 Name</h3>
+              <p>Description of Feature 2.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="column">
+              <img src="{{ url_for('static', filename='img/feature1_image.jpg') }}" alt="Feature 3 Image">
+              <h3 class="subtitle">Feature 3 Name</h3>
+              <p>Description of Feature 3.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+  <div class="container">
+      <h2 class="title">About</h2>
+      <p>What inspired the project? Share a personal story about your project's inspiration. Mention that this is a Portfolio Project for Holberton School and provide a link to the school.</p>
+
+      <h3 class="subtitle">Team Members</h3>
+      <ul>
+          <li><a href="link_to_linkedin">LinkedIn</a></li>
+          <li><a href="link_to_github">GitHub</a></li>
+          <li><a href="link_to_twitter">Twitter</a></li>
+      </ul>
+
+      <a href="link_to_github_repository" class="button">GitHub Repository</a>
+  </div>
+</section>
+
+{% endblock %}
